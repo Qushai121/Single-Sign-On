@@ -5,16 +5,20 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="~/Assets/Css/TailwindOutput.css" rel="stylesheet">
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+    <div class="min-h-[100dvh] flex flex-col max-w-[600px] mx-auto justify-center items-center" >
+        <asp:ContentPlaceHolder id="Content" runat="server">
         </asp:ContentPlaceHolder>
+        
     </div>
+        <p class="text-center py-2 w-full font-semibold absolute bottom-1" >
+    Single Sign Login By Qushai
+</p>
     </form>
 </body>
 </html>
